@@ -113,8 +113,8 @@ export default function Weather() {
           rel="noreferrer"
         >
           Open source
-        </a>
-        code by Zoey Leyoussi✨
+        </a>{" "}
+        &nbsp code by Zoey Leyoussi✨
       </div>
     </div>
   );
