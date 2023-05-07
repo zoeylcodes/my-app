@@ -108,7 +108,7 @@ export default function Weather() {
 
       <div className="footer text-center">
         <a
-          href="https://github.com/Zoeyxo/ZL-SheCodes"
+          href="https://github.com/zoeylcodes/my-app"
           target="_blank"
           rel="noreferrer"
         >
