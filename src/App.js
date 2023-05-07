@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./Weather.css";
 import Weather from "./Weather";
 function App() {
