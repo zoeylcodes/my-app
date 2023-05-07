@@ -114,7 +114,7 @@ export default function Weather() {
         >
           Open source
         </a>{" "}
-        &nbsp code by Zoey Leyoussi✨
+        code by Zoey Leyoussi✨
       </div>
     </div>
   );
