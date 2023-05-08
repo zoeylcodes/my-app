@@ -22,6 +22,11 @@ body {
   width: 64px;
 }
 
+.card img {
+  height: 45px;
+  width: 45px;
+}
+
 .Weather .weather-temperature strong {
   color: rgb(33, 33, 33);
   font-size: 64px;

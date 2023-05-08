@@ -82,6 +82,7 @@ export default function Weather() {
         </div>
         <div className="col-6">
           <ul>
+            <li>Precipitation: 15%</li>
             <li>Humidity: 80%</li>
             <li>Wind: 10 km/h</li>
           </ul>
@@ -94,7 +95,7 @@ export default function Weather() {
         <div className="row justify-content-center">
           {forecastData.map((day) => (
             <div className="col" key={day.day}>
-              <div className="card" style={{ width: "11rem" }}>
+              <div className="card " style={{ width: "10rem" }}>
                 <img
                   src={day.imgUrl}
                   alt={day.description}
