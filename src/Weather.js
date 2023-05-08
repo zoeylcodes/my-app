@@ -39,15 +39,20 @@ export default function Weather() {
             <input
               type="search"
               placeholder="Type a city..."
-              className="form-control"
+              className="form-control w-80"
               autoComplete="off"
             />
           </div>
-          <div className="col-3">
+          <div className="col-3 d-flex justify-content-end">
             <input
               type="submit"
               value="Search"
-              className="btn btn-primary w-100"
+              className="btn btn-primary w-50 me-2"
+            />
+            <input
+              type="submit"
+              value="Current"
+              className="btn btn-primary w-50"
             />
           </div>
         </div>
@@ -86,7 +91,7 @@ export default function Weather() {
       <br />
 
       <div className="Forecast">
-        <div className="row">
+        <div className="row justify-content-center">
           {forecastData.map((day) => (
             <div className="col" key={day.day}>
               <div className="card" style={{ width: "11rem" }}>
@@ -95,7 +100,7 @@ export default function Weather() {
                   alt={day.description}
                   className="img-fluid mx-auto text-center"
                 />
-                <div className="card-body text-center bg-transparent ">
+                <div className="card-body text-center ">
                   <h5 className="card-title text-center">{day.day}</h5>
                   <p className="card-text text-center">{day.description}</p>
                 </div>

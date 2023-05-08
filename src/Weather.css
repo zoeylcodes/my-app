@@ -1,8 +1,8 @@
 .Weather {
   padding: 20px;
-  border: 1px solid #8ac3ee;
+  border: 1px solid rgba(138, 195, 238, 0.2);
   border-radius: 5px;
-  background-color: #8ac3ee;
+  background-color: rgba(138, 195, 238, 0.2);
 }
 body {
   background-image: url(Images/white-cloud-blue-sky.jpg);
@@ -77,4 +77,36 @@ body {
 
 ul {
   list-style: none;
+}
+
+h1 {
+  color: white;
+}
+
+.card {
+  background-color: rgba(138, 195, 238, 0.3) !important;
+  border: rgba(138, 195, 238, 0.3) !important;
+}
+
+@media screen and (max-width: 576px) {
+  .Weather {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .Weather h1 {
+    font-size: 2rem;
+  }
+
+  .Weather input[type="search"] {
+    width: 100%;
+  }
+
+  body {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 }
