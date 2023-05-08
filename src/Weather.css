@@ -23,6 +23,7 @@ body {
 }
 
 .card img {
+  margin-top: 10px;
   height: 45px;
   width: 45px;
 }
