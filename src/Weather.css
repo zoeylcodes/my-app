@@ -98,6 +98,13 @@ h1 {
   border: rgba(138, 195, 238, 0.3) !important;
 }
 
+.forecast .col {
+  margin-bottom: 1rem;
+}
+.forecast .row {
+  justify-content: center;
+}
+
 @media screen and (max-width: 576px) {
   .Weather {
     justify-content: center;
@@ -122,5 +129,11 @@ h1 {
   .forecast {
     margin: 0 auto;
     text-align: center;
+  }
+
+  .forecast .row {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
   }
 }
