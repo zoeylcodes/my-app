@@ -139,7 +139,7 @@ export default function Weather(props) {
     );
   } else {
     const apiKey = "e22ed9083fe0fa0dbcc4f7e384978903";
-    let city = "toronto";
+
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&units=metric&appid=${apiKey}
 `;
     axios.get(apiUrl).then(handleResponse);
