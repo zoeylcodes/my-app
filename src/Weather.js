@@ -4,6 +4,8 @@ import "./Weather.css";
 import Weatherinfo from "./Weatherinfo";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -66,7 +68,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       city: response.data.name,
       description: response.data.weather[0].description,
-      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`,
+      icon: response.data.weather[0].icon,
     });
   }
 
