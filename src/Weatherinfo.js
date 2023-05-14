@@ -1,6 +1,6 @@
 import React from "react";
 import FormattedDate from "./formattedDate";
-import ReactAnimatedWeather from "react-animated-weather";
+
 import WeatherTemperature from "./WeatherTemperature";
 
 import WeatherIcon from "./WeatherIcon";

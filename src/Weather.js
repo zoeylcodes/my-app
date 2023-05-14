@@ -5,7 +5,6 @@ import Weatherinfo from "./Weatherinfo";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import ReactAnimatedWeather from "react-animated-weather";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
