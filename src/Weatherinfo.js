@@ -12,7 +12,7 @@ export default function WeatherInfo(props) {
         <h1>{props.data.city}</h1>
         <ul className="float-left">
           <li>
-            <FormattedDate date={props.data.date} />
+            <formattedDate date={props.data.date} />
           </li>
           <li className="text-capitalize">{props.data.description}</li>
         </ul>
