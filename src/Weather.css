@@ -1,31 +1,27 @@
 .Weather {
   padding: 20px;
+
   border: 1px solid rgba(138, 195, 238, 0.2);
   border-radius: 5px;
   background-color: rgba(138, 195, 238, 0.2);
 }
+
 body {
   background-image: url(Images/white-cloud-blue-sky.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: auto;
 }
 
 .Weather .overview {
   margin-bottom: 20px;
 }
-
 .Weather .weather-temperature img {
   margin-right: 5px;
   height: 64px;
   width: 64px;
-}
-
-.card img {
-  margin-top: 10px;
-  height: 45px;
-  width: 45px;
 }
 
 .Weather .weather-temperature strong {
@@ -35,10 +31,22 @@ body {
   font-weight: 400;
 }
 
+.Weather input[type="search"] {
+  width: 400px;
+}
+
 .Weather .weather-temperature .units {
   position: relative;
   font-size: 16px;
   top: -34px;
+}
+
+.WeatherForecast-space {
+  margin-left: 6.5px;
+}
+
+.Weather .weather-temperature .units a {
+  text-decoration: none;
 }
 
 .Weather .weather-temperature .active {
@@ -91,11 +99,6 @@ ul {
 
 h1 {
   color: black;
-}
-
-.card {
-  background-color: rgba(138, 195, 238, 0.3) !important;
-  border: rgba(138, 195, 238, 0.3) !important;
 }
 
 .forecast .col {
