@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import WeatherForecast from "./WeatherForecast";
+import WeatherCurrent from "./WeatherCurrent";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -58,18 +59,13 @@ export default function Weather(props) {
                   onChange={handleCityChange}
                 />
               </div>
-              <div className="col-md-3 d-flex justify-content-center justify-content-sm-end mt-2 mt-sm-0 mx-auto">
+              <div className="col-md-3 col-sm-12 d-flex justify-content-center justify-content-sm-end mt-2 mt-sm-0 mx-auto">
                 <input
                   type="submit"
                   value="Search"
                   className="btn btn-primary w-100 me-2 mb-2 mb-sm-0"
                 />
-
-                <input
-                  type="submit"
-                  value="Current"
-                  className="btn btn-primary w-100 me-2 mb-2 mb-sm-0"
-                />
+                <WeatherCurrent />
               </div>
             </div>
           </form>

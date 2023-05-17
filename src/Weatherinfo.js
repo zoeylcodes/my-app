@@ -3,7 +3,8 @@ import FormattedDate from "./FormattedDate";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDroplet } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Weather.css";
 import WeatherTemperature from "./WeatherTemperature";
 import WeatherIcon from "./WeatherIcon";
 
@@ -13,7 +14,7 @@ export default function WeatherInfo(props) {
       <div className="float-left">
         <div className="overview">
           <h1>{props.data.city}</h1>
-          <ul className="float-left">
+          <ul className="float-left ml-0">
             <li>
               <FormattedDate date={props.data.date} />
             </li>
@@ -36,12 +37,14 @@ export default function WeatherInfo(props) {
         <div className="col-6">
           <ul>
             <li>
-              <FontAwesomeIcon icon={faDroplet} /> Humidity{" "}
-              {Math.round(props.data.humidity)}%
+              <FontAwesomeIcon icon={faDroplet} />{" "}
+              <span className="label-text">Humidity </span>{" "}
+              <strong>{Math.round(props.data.humidity)}</strong>%
             </li>
             <li>
-              <FontAwesomeIcon icon={faWind} /> Wind{" "}
-              {Math.round(props.data.wind)} km/h
+              <FontAwesomeIcon icon={faWind} />{" "}
+              <span className="label-text">Wind </span>{" "}
+              <strong>{Math.round(props.data.wind)}</strong> km/h
             </li>
           </ul>
         </div>
