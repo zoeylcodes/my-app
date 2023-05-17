@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
-import WeatherForecast from "./WeatherForecast";
+
 import Weatherinfo from "./Weatherinfo";
-import FormattedDate from "./FormattedDate";
+
 import WeatherForecastComponent from "./WeatherForecast"; // Rename the import statement
 import "./Weather.css";
-import { useGeolocated } from "react-geolocated";
 
 export default function WeatherCurrent() {
   const [weatherData, setWeatherData] = useState(null);

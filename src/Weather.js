@@ -4,8 +4,6 @@ import Weatherinfo from "./Weatherinfo";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import WeatherForecast from "./WeatherForecast";
 import WeatherCurrent from "./WeatherCurrent";
