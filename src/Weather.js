@@ -4,9 +4,10 @@ import Weatherinfo from "./Weatherinfo";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import WeatherForecast from "./WeatherForecast";
-import WeatherCurrent from "./WeatherCurrent";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -57,13 +58,13 @@ export default function Weather(props) {
                   onChange={handleCityChange}
                 />
               </div>
-              <div className="col-md-3 col-sm-12 d-flex justify-content-center justify-content-sm-end mt-2 mt-sm-0 mx-auto">
-                <input
+              <div className="col-md-3 col-sm-12 d-flex justify-content-center justify-content-sm-end mt-2 mt-sm-0 mx-auto mb-2">
+                <button
                   type="submit"
-                  value="Search"
-                  className="btn btn-primary w-100 me-2 mb-2 mb-sm-0"
-                />
-                <WeatherCurrent />
+                  className="btn btn-primary w-100 me-2 mb-2 mb-sm-0 ms-2 custom-button"
+                >
+                  <FontAwesomeIcon icon={faSearch} />{" "}
+                </button>
               </div>
             </div>
           </form>
