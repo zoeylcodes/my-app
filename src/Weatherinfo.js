@@ -39,12 +39,16 @@ export default function WeatherInfo(props) {
             <li>
               <FontAwesomeIcon icon={faDroplet} />{" "}
               <span className="label-text">Humidity </span>{" "}
-              <strong>{Math.round(props.data.humidity)}</strong>%
+              <span className="ml-3">
+                <strong>{Math.round(props.data.humidity)}</strong> %
+              </span>
             </li>
             <li>
               <FontAwesomeIcon icon={faWind} />{" "}
               <span className="label-text">Wind </span>{" "}
-              <strong>{Math.round(props.data.wind)}</strong> km/h
+              <span className="ml-3">
+                <strong>{Math.round(props.data.wind)}</strong> km/h
+              </span>
             </li>
           </ul>
         </div>

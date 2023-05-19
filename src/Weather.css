@@ -25,15 +25,16 @@ body {
 }
 
 .Weather .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: azure;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
 }
 
 .Weather input[type="search"] {
-  width: 400px;
-  margin-right: 30px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .Weather .weather-temperature .units {
@@ -114,7 +115,9 @@ li svg {
 }
 
 h1 {
-  color: black;
+  color: azure;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
 }
 
 .forecast .col {
