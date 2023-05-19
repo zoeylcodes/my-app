@@ -24,7 +24,7 @@ export default function WeatherInfo(props) {
       </div>
       <div className="row">
         <div className="col-6">
-          <div className="clearfix weather-temperature text-shadow">
+          <div className="clearfix weather-temperature text-white">
             <div className="float-left">
               <WeatherIcon
                 code={props.data.icon}
@@ -38,7 +38,7 @@ export default function WeatherInfo(props) {
           <ul>
             <li>
               <FontAwesomeIcon icon={faDroplet} />{" "}
-              <span className="label-text">Humidity </span>{" "}
+              <span className="label-text ">Humidity </span>{" "}
               <span className="ml-3">
                 <strong>{Math.round(props.data.humidity)}</strong> %
               </span>
