@@ -7,12 +7,26 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Weather.css";
 import WeatherTemperature from "./WeatherTemperature";
 import WeatherIcon from "./WeatherIcon";
+import WeatherApp from "./WeatherApp";
 
 export default function WeatherInfo(props) {
   return (
     <React.Fragment>
       <div className="float-left">
         <div className="overview">
+          <ul>
+            <li
+              className="float-right"
+              style={{
+                color: "azure",
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+              }}
+            >
+              {" "}
+              <WeatherApp />
+            </li>
+          </ul>
+
           <h1>{props.data.city}</h1>
           <ul
             className="float-left ml-0 "
@@ -21,6 +35,7 @@ export default function WeatherInfo(props) {
               textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
             }}
           >
+            {" "}
             <li>
               <FormattedDate date={props.data.date} />
             </li>
