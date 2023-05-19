@@ -22,6 +22,9 @@ body {
   height: 64px;
   width: 64px;
 }
+.footer {
+  color: azure;
+}
 
 .Weather .weather-temperature strong {
   color: #ffea51;

@@ -8,7 +8,7 @@ function App() {
         <Weather defaultCity="Toronto" />
       </header>
 
-      <div className="footer text-center text-muted">
+      <div className="footer text-center mt-3">
         <a
           href="https://github.com/zoeylcodes/my-app"
           target="_blank"
@@ -24,7 +24,14 @@ function App() {
         >
           Zoey Leyoussi
         </a>
-        ✨
+        ✨ and hosted on{" "}
+        <a
+          href="https://serene-sunshine-ecdd69.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netlify
+        </a>
       </div>
     </div>
   );
