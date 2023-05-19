@@ -1,6 +1,5 @@
 .Weather {
-  padding: 20px;
-
+  padding: 30px;
   border: 1px solid rgba(138, 195, 238, 0.2);
   border-radius: 5px;
   background-color: rgba(138, 195, 238, 0.2);
@@ -117,7 +116,7 @@ li svg {
 h1 {
   color: azure;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 18px;
+  font-size: 64px;
 }
 
 .forecast .col {
