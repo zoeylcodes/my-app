@@ -14,7 +14,13 @@ export default function WeatherInfo(props) {
       <div className="float-left">
         <div className="overview">
           <h1>{props.data.city}</h1>
-          <ul className="float-left ml-0">
+          <ul
+            className="float-left ml-0 "
+            style={{
+              color: "azure",
+              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+            }}
+          >
             <li>
               <FormattedDate date={props.data.date} />
             </li>
@@ -24,7 +30,13 @@ export default function WeatherInfo(props) {
       </div>
       <div className="row">
         <div className="col-6">
-          <div className="clearfix weather-temperature text-white">
+          <div
+            className="clearfix weather-temperature"
+            style={{
+              color: "azure",
+              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+            }}
+          >
             <div className="float-left">
               <WeatherIcon
                 code={props.data.icon}
@@ -38,15 +50,43 @@ export default function WeatherInfo(props) {
           <ul>
             <li>
               <FontAwesomeIcon icon={faDroplet} />{" "}
-              <span className="label-text ">Humidity </span>{" "}
-              <span className="ml-3">
+              <span
+                className="label-text "
+                style={{
+                  color: "azure",
+                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+                }}
+              >
+                Humidity{" "}
+              </span>{" "}
+              <span
+                className="ml-3"
+                style={{
+                  color: "azure",
+                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+                }}
+              >
                 <strong>{Math.round(props.data.humidity)}</strong> %
               </span>
             </li>
             <li>
               <FontAwesomeIcon icon={faWind} />{" "}
-              <span className="label-text">Wind </span>{" "}
-              <span className="ml-3">
+              <span
+                className="label-text"
+                style={{
+                  color: "azure",
+                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+                }}
+              >
+                Wind{" "}
+              </span>{" "}
+              <span
+                className="ml-3 "
+                style={{
+                  color: "azure",
+                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+                }}
+              >
                 <strong>{Math.round(props.data.wind)}</strong> km/h
               </span>
             </li>
