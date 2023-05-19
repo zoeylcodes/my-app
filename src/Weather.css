@@ -35,8 +35,8 @@ body {
 
 .quote-container {
   background-color: transparent;
-  border: 1px solid rgba(138, 195, 238, 0.2);
-  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .quote-text {
