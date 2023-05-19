@@ -25,6 +25,7 @@ body {
 .footer {
   color: azure;
   font-size: 11px;
+  margin-bottom: 10px;
 }
 
 .weather-app {
