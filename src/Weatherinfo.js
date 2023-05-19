@@ -48,7 +48,12 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-6">
           <ul>
-            <li>
+            <li
+              style={{
+                color: "#0059CF",
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+              }}
+            >
               <FontAwesomeIcon icon={faDroplet} />{" "}
               <span
                 className="label-text "
@@ -69,7 +74,12 @@ export default function WeatherInfo(props) {
                 <strong>{Math.round(props.data.humidity)}</strong> %
               </span>
             </li>
-            <li>
+            <li
+              style={{
+                color: "#0059CF",
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+              }}
+            >
               <FontAwesomeIcon icon={faWind} />{" "}
               <span
                 className="label-text"
